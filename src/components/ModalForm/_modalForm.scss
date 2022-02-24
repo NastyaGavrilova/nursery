@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+.modal__wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+.modal__wrapper.open {
+  height: 100%;
+  display: block;
+}
+.modal__wrapper.close {
+  height: 0;
+  display: none;
+}
+.modal__body {
+  max-width: 500px;
+  margin: auto;
+  background: $c-icon-green;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  // max-height: 500px;
+}
+.modal__close {
+  text-align: right;
+  margin-top: -15px;
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.modal__title {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+.modal__forms {
+  display: flex;
+  justify-content: space-between;
+}

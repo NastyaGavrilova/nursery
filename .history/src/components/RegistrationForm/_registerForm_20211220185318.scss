@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.c-register-form {
+  max-width: 300px;
+  width: 100%;
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+.e-register-form__title {
+  color: $c-dark-grey;
+  text-align: center;
+  margin-bottom: 10px;
+  // line-height: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  max-width: 225px;
+}
+.c-form-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    color: $c-dark-grey;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__input {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    color: $c-dark-grey;
+  }
+  &__input:focus {
+    border: 1px solid $c-dark-grey !important;
+  }
+  &__btn {
+    border-radius: 10px;
+    padding: 4px 10px;
+    border: none;
+    background-color: $c-green;
+    color: $c-dark-white;
+    font-size: 14px;
+    font-weight: 400;
+    // margin-top: 5px;
+  }
+}
+
+.error {
+  color: rgba(255, 72, 0, 0.616);
+}

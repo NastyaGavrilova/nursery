@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.c-user-reviews {
+  background-color: $c-absolute-white;
+  &__wrapper {
+    padding: 60px 190px;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+.e-user-reviews__title {
+  color: $c-dark-grey;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.e-user-reviews__subtitle {
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: $c-grey;
+}
+
+@media screen and(max-width:1220px) {
+  .c-user-reviews {
+    background-color: $c-absolute-white;
+    &__wrapper {
+      padding: 60px 110px;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}

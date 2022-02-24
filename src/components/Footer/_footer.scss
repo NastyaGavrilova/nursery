@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.c-footer {
+  background-color: $c-dark-grey;
+  &__wrapper {
+    padding: 20px 200px;
+    display: flex;
+    justify-content: center;
+  }
+  &__copyright,
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__copyright {
+    margin-right: 10px;
+    color: $c-green;
+  }
+  &__text {
+    color: $c-icon-green;
+  }
+}

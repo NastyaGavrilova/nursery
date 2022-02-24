@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+.c-shop-location {
+  background-color: $c-absolute-white;
+  &__wrapper {
+    padding: 60px 200px;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+.e-shop-location__title {
+  color: $c-dark-grey;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.e-shop-location__subtitle {
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: $c-grey;
+}
+
+@media screen and(max-width:1220px) {
+  .c-shop-location {
+    background-color: $c-absolute-white;
+    &__wrapper {
+      padding: 60px 110px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+  .e-shop-location__title {
+    line-height: 30px;
+    font-size: 40px;
+  }
+  .e-shop-location__subtitle {
+    text-align: center;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $c-grey;
+  }
+}

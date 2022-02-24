@@ -1,0 +1,142 @@
+@import "../../styles/variables";
+.c-benefits {
+  max-width: 1520px;
+  &__wrapper {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 120px;
+  }
+  &__icon {
+    background-size: cover;
+    object-fit: cover;
+    height: auto;
+    &--left {
+      max-width: 85px;
+      width: 100%;
+    }
+    &--center {
+      max-width: 68px;
+      width: 100%;
+    }
+    &--right {
+      max-width: 50px;
+      width: 100%;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__right {
+    margin-left: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c-dark-grey;
+    margin-bottom: 5px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-grey;
+  }
+}
+
+@media screen and(max-width:1335px) {
+  .c-benefits {
+    &__wrapper {
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 60px;
+    }
+    &__item {
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+    }
+    &__right {
+      margin-left: 15px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: $c-dark-grey;
+      margin-bottom: 5px;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-grey;
+    }
+  }
+}
+@media screen and(max-width:1150px) {
+  .c-benefits {
+    &__wrapper {
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 60px;
+    }
+    &__item {
+      max-width: 250px;
+      width: 100%;
+      display: flex;
+    }
+    &__right {
+      margin-left: 10px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      color: $c-dark-grey;
+      margin-bottom: 5px;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-grey;
+    }
+  }
+}
+@media screen and(max-width:980px) {
+  .c-benefits {
+    &__wrapper {
+      justify-content: center;
+      display: flex;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 250px;
+      width: 100%;
+      display: flex;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+    &__right {
+      margin-left: 10px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      color: $c-dark-grey;
+      margin-bottom: 5px;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-grey;
+    }
+  }
+}

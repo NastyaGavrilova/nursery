@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+@media screen and(max-width:1775px) {
+  .c-card {
+    &__circle {
+      position: relative;
+      top: 50px;
+      left: 85px;
+    }
+    &__wrapper {
+      max-width: 300px;
+      padding: 50px 55px 50px 60px;
+    }
+  }
+
+  .c-plant-achievements__wrapper {
+    display: flex;
+    max-width: 1775px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and(max-width:1500px) {
+  .c-card {
+    &__circle {
+      position: relative;
+      top: 35px;
+      left: 80px;
+      width: 80px;
+      height: 80px;
+    }
+    &__wrapper {
+      max-width: 280px;
+      padding: 50px 55px 50px 60px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+}

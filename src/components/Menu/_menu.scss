@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.menu {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.2s;
+  z-index: 40;
+  &__content {
+    width: 25%;
+    height: 100%;
+    background-color: #7e8b72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+  }
+  &__header {
+    padding: 35px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__list &__item &__link {
+    color: white;
+    text-decoration: none;
+  }
+  &__list {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__list &__item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  &__img--user,
+  &__img--shop {
+    cursor: pointer;
+  }
+}
+
+// .blur {
+//   width: 100vh;
+//   height: 100vh;
+//   right: 30%;
+//   backdrop-filter: blur(2px);
+//   position: absolute;
+// }
+.menu.active {
+  transform: translateX(75%);
+  z-index: 40;
+}
+.сlose {
+  color: white;
+}
+.material-icons {
+  color: black;
+}
+
+// @media screen and(max-width: 768px) {
+//   .menu {
+//     &__content {
+//       width: 100%;
+//     }
+//   }
+//   .blur {
+//     backdrop-filter: none;
+//   }
+// }

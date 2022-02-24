@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+.c-banner {
+  margin: 0 110px 100px 110px;
+  &__wrapper {
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    max-width: 740px;
+    width: 100%;
+  }
+  &__right {
+    max-width: 765px;
+    width: 100%;
+    height: 765px;
+    border-radius: 50%;
+    border: 5px solid $c-absolute-white;
+    padding: 43px;
+    &--circle {
+      max-width: 670px;
+      width: 100%;
+      height: 670px;
+      border-radius: 50%;
+      background-color: $c-absolute-white;
+    }
+    &--img {
+      // max-width: 653px;
+      // width: 100%;
+      // height: auto;
+      // background-size: cover;
+      // object-fit: cover;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+    &--icon1,
+    &--icon2,
+    &--icon3 {
+      max-width: 60px;
+      width: 100%;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $c-absolute-white;
+    }
+    &--img1,
+    &--img2,
+    &--img3 {
+      padding: 16px;
+    }
+    &--icon1 {
+      position: absolute;
+      top: 310px;
+      right: 730px;
+    }
+    &--icon2 {
+      position: absolute;
+      top: 310px;
+      right: 195px;
+    }
+    &--icon3 {
+      position: absolute;
+      top: 930px;
+      right: 310px;
+    }
+  }
+}

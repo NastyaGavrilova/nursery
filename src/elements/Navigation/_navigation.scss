@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.c-navigation {
+  width: 622px;
+  z-index: 3;
+  &__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    &--link {
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 20px;
+      color: $c-grey;
+    }
+    &--link:focus,
+    &--link:hover {
+      color: $c-green;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and(max-width: 1640px) {
+  .c-navigation {
+    max-width: 550px;
+  }
+}
+@media screen and(max-width: 1485px) {
+  .c-navigation {
+    width: 450px;
+    &__item {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and(max-width:1210px) {
+  .c-navigation {
+    display: none;
+  }
+}
