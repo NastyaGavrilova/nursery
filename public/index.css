@@ -180,6 +180,8 @@ template {
 [hidden] {
   display: none;
 }
+
+/*# sourceMappingURL=normalize.min.css.map */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -220,4 +222,3 @@ body {
   max-width: 1920px;
   width: 100%;
 }
-/*# sourceMappingURL=index.css.map */
